@@ -1,0 +1,21 @@
+    <div class="card" style="width: 18rem;">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">{{nombre}}</h5>
+          <!-- <p class="card-text">
+            Uso de ngClass para selecionar estilos de una clase de acuerdo a unas condiciones 
+              <span [ngClass]="genero == 'algo1' ? 'badge bg-dark' : 'badge bg-light text-dark'">
+                {{email}}
+              </span>
+              <br>
+              <span [ngStyle]="{'color': genero == 'algo1' ?  'blue' : 'green'}">
+                {{genero}}
+              </span>
+          </p> -->
+
+          <!-- Uso de rutas hijas para redirigirse a otro componente con información especifica de un usuario 
+            <button routerLink="usuario/{{this.id}}">Detalle</button> -->
+            <button (click)="verDetalles()">Ver Detalles</button>
+
+        </div>
+      </div>

@@ -1,0 +1,6 @@
+<div class="row">
+    <p>Este es el componente listado de usuarios</p>
+    <div *ngFor="let usuario of listaUsuariosData" class="col-md-3">
+        <app-card [user]="usuario"></app-card>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Listado de Usuarios</h1>
+    <input type="text" [(ngModel)]="texto" (ngModelChange)="onChange($event)">
+    <app-inicio></app-inicio>
+    <!-- <div class="row">
+        <div *ngFor="let usuario of listaUsuariosData" class="col-md-3">
+            <app-card [user]="usuario"></app-card>
+        </div>
+    </div> -->
+
+    <!-- <app-listado-usuarios></app-listado-usuarios> -->
+
+    <router-outlet></router-outlet>
+
+</div>
+
