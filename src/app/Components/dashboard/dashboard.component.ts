@@ -24,10 +24,10 @@ export class DashboardComponent implements OnInit {
     this.texto = "";
     this.listaUsuariosData=[];
     
-    this.usuarioxService.getUsuarios().subscribe(data =>{
-      console.log(data);
-      this.listaUsuariosData = data.data;
-    })
+    // this.usuarioxService.getUsuarios().subscribe(data =>{
+    //   console.log(data);
+    //   this.listaUsuariosData = data.data;
+    // })
   }
 
   ngOnInit(): void {

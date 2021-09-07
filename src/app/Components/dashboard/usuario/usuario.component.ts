@@ -16,6 +16,7 @@ export class UsuarioComponent implements OnInit {
   email:string;
   genero: string;
   status: string;
+  cargando: boolean;
 
   constructor(private aRoute: ActivatedRoute, private usuarioxService: UsuarioxService) { 
     //this.id = this.aRoute.snapshot.paramMap.get('id')!;
@@ -25,6 +26,8 @@ export class UsuarioComponent implements OnInit {
     this.status = "";
 
     this.id = "";
+
+    this.cargando = true;
 
     this.aRoute.queryParams.pipe(filter(params => params.id)).subscribe(params =>{
       //console.log(params.id);
@@ -36,6 +39,7 @@ export class UsuarioComponent implements OnInit {
       this.email = data.data.email;
       this.genero = data.data.gender;
       this.status = data.data.status;
+      this.cargando = false;
     })
   }
 

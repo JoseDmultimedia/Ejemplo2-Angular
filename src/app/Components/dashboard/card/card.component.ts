@@ -26,7 +26,6 @@ export class CardComponent implements OnInit {
     this.nombre = this.user.name;
     this.email = this.user.email;
     this.genero = this.user.id;
-
     this.id = this.user.id;
   }
 

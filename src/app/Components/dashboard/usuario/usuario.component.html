@@ -1,7 +1,10 @@
-<p>usuario works!
-    <br>
-    {{nombre}} <br>
-    {{email}} <br>
-    {{genero}}<br>
-    {{status}}<br>
-</p>
+<app-spinner *ngIf="cargando"></app-spinner>
+<div *ngIf="!cargando">
+    <h1>Nombre: {{nombre}}</h1>
+    <p>
+        Email: {{email}} <br>
+        Genero: {{genero}}<br>
+        Status: <span [ngStyle]="{'color': this.status == 'active' ? 'green' : 'red'}">{{status}}</span><br>
+    </p>
+</div>
+<button class="btn btn-sm btn-dark mb-4" routerLink="/dashboard">Volver</button>

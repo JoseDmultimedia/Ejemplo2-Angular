@@ -13,6 +13,7 @@ import { InicioComponent } from './Components/inicio/inicio.component';
 import { InicioAppComponent } from './Components/inicio-app/inicio-app.component';
 import { ListadoUsuariosComponent } from './Components/dashboard/listado-usuarios/listado-usuarios.component';
 import { UsuarioComponent } from './Components/dashboard/usuario/usuario.component';
+import { SpinnerComponent } from './Components/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { UsuarioComponent } from './Components/dashboard/usuario/usuario.compone
     InicioComponent,
     InicioAppComponent,
     ListadoUsuariosComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
